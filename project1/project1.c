@@ -8,6 +8,9 @@
    Project 1
 */
 
+// Avoid warnings
+#define _CRT_SECURE_NO_WARNINGS
+
 // Necessary includes
 #include<stdio.h>
 #include<stdbool.h>
