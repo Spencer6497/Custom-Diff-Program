@@ -24,7 +24,7 @@ void main() {
 	FILE* fp1, * fp2;
 
 	// Open files
-	fp1 = fopen("../hello.txt", "r");
+	fp1 = fopen(filename1, "r");
 	fp2 = fopen(filename2, "r");
 
 	// Declare variables for user options
@@ -43,19 +43,16 @@ void main() {
 
 	printf("Letters only? (Y/N): ");
 	scanf(" %c", &lettersOnlyVar);
-
-	if (!fp1) {
-		perror("fopen");
-	}
 	
 	// While loop that ensures EOF has not been met
 	
-	//current = getc(fp1);
-	 /* while(current != EOF) {
-		current2 = getc(fp2);
+	current = getc(fp1);
+	 while(current != EOF) {
+		 printf("%c", current);
+		current = getc(fp1);
 	 }
 	 fclose(fp1);
-	 fclose(fp2); */
+	 fclose(fp2);
 	
 	// Test
 	//printf("%s", caseI);
