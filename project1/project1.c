@@ -24,14 +24,41 @@ void main() {
 	FILE* fp1, * fp2;
 
 	// Open files
-	fp1 = fopen(filename1, "r");
+	fp1 = fopen("../hello.txt", "r");
 	fp2 = fopen(filename2, "r");
 
 	// Declare variables for user options
 	bool caseInsensitivity = true;
 	bool lettersOnly = true;
 
+	// Create char variables to store user responses and current characters from each file
+	char caseI;
+	char lettersOnlyVar;
+	char current;
+	char current2;
 
 	// Ask user for case-insensitivity or letters-only
 	printf("Case insensitive? (Y/N): ");
+	scanf(" %c", &caseI);
+
+	printf("Letters only? (Y/N): ");
+	scanf(" %c", &lettersOnlyVar);
+
+	if (!fp1) {
+		perror("fopen");
+	}
+	
+	// While loop that ensures EOF has not been met
+	
+	//current = getc(fp1);
+	 /* while(current != EOF) {
+		current2 = getc(fp2);
+	 }
+	 fclose(fp1);
+	 fclose(fp2); */
+	
+	// Test
+	//printf("%s", caseI);
+	//printf("%s", lettersOnlyVar);
+	
 }
