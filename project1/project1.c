@@ -18,8 +18,8 @@
 
 void main() {
 	// Hardcode filenames for input files, save to character arrays
-	char filename1[] = "file1a.txt";
-	char filename2[] = "file1b-2.txt";
+	char filename1[] = "file2a.txt";
+	char filename2[] = "file2b.txt";
 
 	// Create file pointers for input files
 	FILE* fp1, * fp2;
@@ -134,3 +134,34 @@ void main() {
 	 fclose(fp1);
 	 fclose(fp2);	
 }
+
+// Testing file2a.txt and file2b.txt with input of 'y' 'y'
+/*
+Case insensitive? (Y/N): y
+
+Letters only? (Y/N): y
+
+Comparing file2a.txt to file2b.txt testing for case insensitivity and for letters only
+		File sizes: 728 characters
+		Mismatches: 2.20%
+		 Not tested: 23.21%
+
+C:\Users\S\source\repos\Project1\Debug\project1.exe (process 6748) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
+*/
+
+// Testing file2a.txt and file2b.txt with input of 'n' 'n'
+/*
+Case insensitive? (Y/N): n
+
+Letters only? (Y/N): n
+
+Comparing file2a.txt to file2b.txt testing for case sensitivity and for all characters
+		File sizes: 728 characters
+		Mismatches: 7.28%
+
+C:\Users\S\source\repos\Project1\Debug\project1.exe (process 14920) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
+*/
