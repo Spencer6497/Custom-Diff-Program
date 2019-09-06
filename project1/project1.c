@@ -61,7 +61,7 @@ void main() {
 		// If both case insensitive AND letters only
 		if ((caseI == 'y') && (lettersOnlyVar == 'y')) {
 			// Increment nonLetters if either character isn't alphabetic
-			if ((isalpha(current) == 0) || (isalpha(current2) == 0)) {
+			if (isalpha(current) == 0) {
 				nonLetters++;
 			// Increment numMismatches if the characters don't equal each other
 			} else if (tolower(current) != tolower(current2)) {
@@ -78,7 +78,7 @@ void main() {
 		// If case sensitive, but letters only
 		else if ((caseI == 'n') && (lettersOnlyVar == 'y')) {
 			// Increment nonLetters if either character isn't alphabetic
-			if ((isalpha(current) == 0) || (isalpha(current2) == 0)) {
+			if (isalpha(current) == 0) {
 				nonLetters++;
 			}
 			else if (current != current2) {
@@ -130,6 +130,7 @@ void main() {
 		printf("\n\tMismatches: %.2f%%\n", mismatch);
 	}
 
+	// Close file pointers
 	 fclose(fp1);
 	 fclose(fp2);	
 }
