@@ -14,11 +14,12 @@
 // Necessary includes
 #include<stdio.h>
 #include<stdbool.h>
+#include<ctype.h>
 
 void main() {
 	// Hardcode filenames for input files, save to character arrays
 	char filename1[] = "file1a.txt";
-	char filename2[] = "file1b.txt";
+	char filename2[] = "file1b-2.txt";
 
 	// Create file pointers for input files
 	FILE* fp1, * fp2;
@@ -130,10 +131,5 @@ void main() {
 	}
 
 	 fclose(fp1);
-	 fclose(fp2);
-	
-	// Test
-	//printf("%s", caseI);
-	//printf("%s", lettersOnlyVar);
-	
+	 fclose(fp2);	
 }
