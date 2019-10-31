@@ -2,12 +2,6 @@
    This project takes two files as input and compares them byte-by-byte to record mismatches. It also asks
    the user if they would like to test letters only, and if so, records the % of file untested.
    It performs much like the Linux diff program.
-
-   Spencer Peace
-   CSC 362-001
-   Dr. Richard Fox
-   9/6/19
-   Project 1
 */
 
 // Avoid warnings
